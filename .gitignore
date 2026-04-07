@@ -1,6 +1,9 @@
 # Built extension
 *.oxt
 
+# Local Claude project notes
+CLAUDE.md
+
 # Python
 __pycache__/
 *.pyc
