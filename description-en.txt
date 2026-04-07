@@ -1,0 +1,5 @@
+Mark citations and build a formatted Table of Authorities in LibreOffice Writer.
+
+Supports Cases, Constitutional Provisions, Statutes, Regulations, Rules,
+Other Authorities, and user-defined custom categories. Generates a
+traditionally formatted table with dot leaders and page numbers (or passim).

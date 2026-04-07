@@ -1,0 +1,17 @@
+# Built extension
+*.oxt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Editor
+.vscode/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db

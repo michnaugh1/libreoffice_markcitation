@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Adds a "TOA" top-level menu to the Writer menu bar.
+  Context="com.sun.star.text.TextDocument" limits items to Writer windows.
+  The ~ prefix on a letter creates a keyboard accelerator (Alt+that letter).
+-->
+<oor:component-data
+  xmlns:oor="http://openoffice.org/2001/registry"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  oor:name="Addons"
+  oor:package="org.openoffice.Office">
+  <node oor:name="AddonUI">
+    <node oor:name="OfficeMenuBar">
+      <node oor:name="org.toa.menu" oor:op="replace">
+        <prop oor:name="Title">
+          <value xml:lang="en-US">~TOA</value>
+        </prop>
+        <prop oor:name="Target">
+          <value>_self</value>
+        </prop>
+        <prop oor:name="Context">
+          <value>com.sun.star.text.TextDocument</value>
+        </prop>
+        <node oor:name="Submenu">
+
+          <!-- Citation marking commands -->
+          <node oor:name="N001" oor:op="replace">
+            <prop oor:name="URL">
+              <value>org.toa.command:MarkCitation</value>
+            </prop>
+            <prop oor:name="Title">
+              <value xml:lang="en-US">~Mark Citation...</value>
+            </prop>
+            <prop oor:name="Target">
+              <value>_self</value>
+            </prop>
+            <prop oor:name="Context">
+              <value>com.sun.star.text.TextDocument</value>
+            </prop>
+            <prop oor:name="ImageURL">
+              <value>%origin%/icons/toa_16.png</value>
+            </prop>
+          </node>
+
+          <node oor:name="N002" oor:op="replace">
+            <prop oor:name="URL">
+              <value>org.toa.command:EditCitation</value>
+            </prop>
+            <prop oor:name="Title">
+              <value xml:lang="en-US">~Edit Citation...</value>
+            </prop>
+            <prop oor:name="Target">
+              <value>_self</value>
+            </prop>
+            <prop oor:name="Context">
+              <value>com.sun.star.text.TextDocument</value>
+            </prop>
+            <prop oor:name="ImageURL">
+              <value>%origin%/icons/toa_16.png</value>
+            </prop>
+          </node>
+
+          <node oor:name="N003" oor:op="replace">
+            <prop oor:name="URL">
+              <value>org.toa.command:RemoveCitation</value>
+            </prop>
+            <prop oor:name="Title">
+              <value xml:lang="en-US">~Remove Citation</value>
+            </prop>
+            <prop oor:name="Target">
+              <value>_self</value>
+            </prop>
+            <prop oor:name="Context">
+              <value>com.sun.star.text.TextDocument</value>
+            </prop>
+            <prop oor:name="ImageURL">
+              <value>%origin%/icons/toa_16.png</value>
+            </prop>
+          </node>
+
+          <!-- Separator -->
+          <node oor:name="S001" oor:op="replace">
+            <prop oor:name="URL">
+              <value>private:separator</value>
+            </prop>
+            <prop oor:name="Title">
+              <value/>
+            </prop>
+            <prop oor:name="Target">
+              <value>_self</value>
+            </prop>
+          </node>
+
+          <!-- Table generation -->
+          <node oor:name="N004" oor:op="replace">
+            <prop oor:name="URL">
+              <value>org.toa.command:BuildTable</value>
+            </prop>
+            <prop oor:name="Title">
+              <value xml:lang="en-US">~Build Table of Authorities</value>
+            </prop>
+            <prop oor:name="Target">
+              <value>_self</value>
+            </prop>
+            <prop oor:name="Context">
+              <value>com.sun.star.text.TextDocument</value>
+            </prop>
+            <prop oor:name="ImageURL">
+              <value>%origin%/icons/toa_16.png</value>
+            </prop>
+          </node>
+
+          <!-- Separator -->
+          <node oor:name="S002" oor:op="replace">
+            <prop oor:name="URL">
+              <value>private:separator</value>
+            </prop>
+            <prop oor:name="Title">
+              <value/>
+            </prop>
+            <prop oor:name="Target">
+              <value>_self</value>
+            </prop>
+          </node>
+
+          <!-- Visual / settings -->
+          <node oor:name="N005" oor:op="replace">
+            <prop oor:name="URL">
+              <value>org.toa.command:ToggleHighlights</value>
+            </prop>
+            <prop oor:name="Title">
+              <value xml:lang="en-US">~Toggle Citation Highlights</value>
+            </prop>
+            <prop oor:name="Target">
+              <value>_self</value>
+            </prop>
+            <prop oor:name="Context">
+              <value>com.sun.star.text.TextDocument</value>
+            </prop>
+          </node>
+
+          <node oor:name="N006" oor:op="replace">
+            <prop oor:name="URL">
+              <value>org.toa.command:ManageCategories</value>
+            </prop>
+            <prop oor:name="Title">
+              <value xml:lang="en-US">~Manage Categories...</value>
+            </prop>
+            <prop oor:name="Target">
+              <value>_self</value>
+            </prop>
+            <prop oor:name="Context">
+              <value>com.sun.star.text.TextDocument</value>
+            </prop>
+          </node>
+
+
+        </node>
+      </node>
+    </node>
+  </node>
+</oor:component-data>
